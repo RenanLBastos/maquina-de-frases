@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/maquina-de-frases/static/css/main.8cdccf03.chunk.css",
+    "main.js": "/maquina-de-frases/static/js/main.f7614934.chunk.js",
+    "main.js.map": "/maquina-de-frases/static/js/main.f7614934.chunk.js.map",
+    "runtime-main.js": "/maquina-de-frases/static/js/runtime-main.33b949d3.js",
+    "runtime-main.js.map": "/maquina-de-frases/static/js/runtime-main.33b949d3.js.map",
+    "static/js/2.c3da7c45.chunk.js": "/maquina-de-frases/static/js/2.c3da7c45.chunk.js",
+    "static/js/2.c3da7c45.chunk.js.map": "/maquina-de-frases/static/js/2.c3da7c45.chunk.js.map",
+    "index.html": "/maquina-de-frases/index.html",
+    "static/css/main.8cdccf03.chunk.css.map": "/maquina-de-frases/static/css/main.8cdccf03.chunk.css.map",
+    "static/js/2.c3da7c45.chunk.js.LICENSE.txt": "/maquina-de-frases/static/js/2.c3da7c45.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33b949d3.js",
+    "static/js/2.c3da7c45.chunk.js",
+    "static/css/main.8cdccf03.chunk.css",
+    "static/js/main.f7614934.chunk.js"
+  ]
+}
