@@ -1,6 +1,6 @@
 # Máquina de frases
 
-nesse projeto consumi uma api com frases aleatórias em inglês.
+Nesse projeto consumi uma api com frases aleatórias em inglês usando React
 
 
 # Github pages
