@@ -31,7 +31,6 @@ const color = [
   'color-cor12',
 ];
 
-
 function App () {
   const [frases, setFrases] = useState ([]);
   const [autor, setAutor] = useState ([]);
@@ -67,14 +66,12 @@ function App () {
   );
   function random (arr) {
     return Math.floor (Math.random () * arr.length);
-  
   }
   function handClick () {
     setRandomIndex (Math.floor (Math.random () * 102));
-    
   }
   const animationClass = isFadeOut ? 'fadeOut' : '';
-  
+
   return (
     <div className="container-fluid">
       <header>
@@ -87,7 +84,7 @@ function App () {
           </h1>
           <br />
           <h2 id={colors} className={animationClass}>
-            {' '}- {autor}
+            - {autor}
           </h2>
           <div className="buttons">
             <a

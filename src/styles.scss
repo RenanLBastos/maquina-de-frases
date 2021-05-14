@@ -1,111 +1,95 @@
 body {
-    background-color: rgb(147, 147, 197);
-    display: flex;
-    height: 100vh;
-    align-items: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 .frases-box {
-    background-color: white;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-h2 {
-  text-align: end;
-  font-size: 20px;
-}   
-
-}
-.buttons {
+  background-color: white;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: end;
+    font-size: 20px;
+  }
+  .buttons {
     background-color: white;
     display: flex;
     justify-content: space-between;
     a {
       width: 40px;
-      border-radius: 10% ;
+      border-radius: 10%;
       height: 40px;
       align-items: center;
       float: right;
-      
+
       i {
         color: white;
         padding: 12px;
       }
     }
-    button {
-      height: 40px;
-      width: 80px;
-      border-radius: 10%;
-      cursor: pointer;
-      color:white;
-      border: none;
-      outline: none;
-    }
-
-}
-#autor {
-    text-align: right;
-    font-size: 15px;
-    
-}
-#texto {
-    text-align: center;
-    font-size: 30px;
-    
-    
+  }
+  button {
+    height: 40px;
+    width: 80px;
+    border-radius: 10%;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+  }
 }
 .fadeOut {
-    animation: teste 2s;
+  animation: teste 2s;
 }
 @-webkit-keyframes teste {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes teste {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+$colors: (
+  cor1: #16a085,
+  cor2: #27ae60,
+  cor3: #2c3e50,
+  cor4: #f39c12,
+  cor5: #e74c3c,
+  cor6: #9b59b6,
+  cor7: #fb6964,
+  cor8: #342224,
+  cor9: #472e32,
+  cor10: #bdbb99,
+  cor11: #77b1a9,
+  cor12: #73a857,
+);
+@mixin bg-colors {
+  @each $name, $color in $colors {
+    .bg-#{$name} {
+      background-color: $color;
     }
   }
-  
-  @keyframes teste {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  $colors: (
- cor1: #16a085,
- cor2: #27ae60,
- cor3: #2c3e50,
- cor4: #f39c12,
- cor5: #e74c3c,
- cor6: #9b59b6,
- cor7: #FB6964,
- cor8: #342224,
- cor9: #472E32,
- cor10: #BDBB99,
- cor11: #77B1A9,
- cor12: #73A857,
-  );
-  
-  @mixin bg-colors {
-    @each $name, $color in $colors {
-      .bg-#{$name} {
-        background-color: $color;
-      }
-    }
-  }
+}
+@include bg-colors;
 
-  @include bg-colors;
-
-  @mixin color {
-    @each $name, $color in $colors {
-      #color-#{$name} {
-        color: $color;
-        
-      }
+@mixin color {
+  @each $name, $color in $colors {
+    #color-#{$name} {
+      color: $color;
     }
   }
-
-  @include color;
+}
+@include color;
